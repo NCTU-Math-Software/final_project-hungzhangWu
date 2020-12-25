@@ -5,7 +5,7 @@ for ii=1:X
     sum=sum+temp;                     
     JudgeTheSum(sum);                 %擷取小數點前10位數字的總和
 end
-fprintf('%010d\n',JudgeTheSum(sum))   %保留前十位數字，若最前面那位數的數字為0，則會以0來填補
+fprintf('%010d\n',JudgeTheSum(sum))   %保留前十位數字，若數字不滿足10位數，數字前面則會以0來填補，補足到10位為止。
 end
 
 function number=JudgeTheNumber(A)     %(函數1)判定每個的指數次方是否超過10的10次方
