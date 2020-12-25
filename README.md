@@ -20,16 +20,16 @@
 # The idea of the project
 ### 這個專題是為了找出n^n的級數和前10位數字，由於電腦無法跑出準確數字，所以只取前十位數字，藉由這個概念，我們可以分成下列幾個步驟 : 
 
-* 步驟一 : 將X^X 拆成X乘以自己X次，可以利用 JudgeTheNumber 函數裡的for迴圈來得出答案。
+* 步驟一 : 將X^X 拆成X乘以自己X次，可以利用  JudgeTheNumber  函數裡的for迴圈來得出答案。
 
 
-* 步驟二 : 每當for迴圈跑一次，JudgeTheNumber函數便會判斷是否超出10位數，也就是判定是否大於等於10^10，
+* 步驟二 : 每當for迴圈跑一次， JudgeTheNumber  函數便會判斷是否超出10位數，也就是判定是否大於等於10^10，
 
      如果超出，就會只留下那個數的小數點前10位數字，然後再加起來。
 
-* 步驟三 : 把之前加起來數再利用 JudgeTheSum 函數判斷是否和前面的數加起來會超過10位數，
+* 步驟三 : 把之前加起來數再利用  JudgeTheSum  函數判斷是否和前面的數加起來會超過10位數，
 
-     如果超出，便會用到JudgeTheSum 函數，而JudgeTheNumber和JudgeTheSum函數差不多，最後便會呈現出使用者輸入的參數的答案。
+     如果超出，便會用到  JudgeTheSum  函數，而  JudgeTheNumber  和  JudgeTheSum  函數差不多，最後便會呈現出使用者輸入的參數的答案。
 
 
 
