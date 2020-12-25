@@ -8,7 +8,7 @@ end
 fprintf('%010d\n',JudgeTheSum(sum))   %保留前十位數字，若數字不滿足10位數，數字前面則會以0來填補，補足到10位為止。
 end
 
-function number=JudgeTheNumber(A)     %(函數1)判定每個的指數次方是否超過10的10次方
+function number=JudgeTheNumber(A)     %判定每個的指數次方是否超過10的10次方
 number=1;                             %從1開始
     for jj=1:A                        %將次方拆開變成 A乘以自己A次
         number=number*A;
@@ -18,7 +18,7 @@ number=1;                             %從1開始
 end
 end
 
-function B=JudgeTheSum(B)             %(函數2)判斷總和是否超過(基本上和函數1差不多)
+function B=JudgeTheSum(B)             %判斷總和是否超過(基本上和函數1差不多)
 if B>=10^10
     B=rem(B,10^10);
 end
